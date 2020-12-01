@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <table style="border: 1px solid blue; border-collapse: collapse; 
+            margin-left: 300px;margin-top: 200px; background: tomato;"
+            rules="groups">
+        <caption>Horario Escolar</caption>
+        <thead>
+            <tr>
+                <th style="padding: 20px;">Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2" style="text-align: center;">1-2</td>
+                
+                <td rowspan="2" style="text-align: center;">3-6</td>
+            </tr>
+            <tr>
+                <td>
+                    <table style="border: 1px solid green">
+                        <caption>Calendario</caption>
+                        <thead>
+                            <tr>
+                                <th>L</th>
+                                <th>M</th>
+                                <th>X</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>5</td>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>5</td>
+                <td>7</td>
+                <td>9</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <div style="margin: 0px auto">
+        <fieldset>
+            <legend>Mi Formulario</legend>
+        <form action="registro.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre</label></td>
+                    <td><input type="text" 
+                        name="nombre" 
+                        id="nombre"
+                        value=""
+                        placeholder="Escriba aquí"
+                        autofocus
+                        size="30"
+                        maxlength="10"
+                        pattern="[A-Z]{6}[0-9]{4}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td>
+                        <input type="password" 
+                                name="pass"
+                                id="pass"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pregunta">¿Mayor de Edad?</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="pregunta" 
+                                id="pregunta" value="S" checked /><span>Sí</span>
+                        <input type="radio" name="pregunta" 
+                                id="pregunta" value="N" /><span>No</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="aficiones">Aficiones</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="deporte" id="deporte" value="D" checked /><span>Deporte</span>
+                        <input type="checkbox" name="cine" id="cine" value="C" /><span>Cine</span>
+                        <input type="checkbox" name="viajar" id="viajar" value="V" /><span>Viajar</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="provincias">Provincias</label>
+                    </td>
+                    <td>
+                        <select name="provincias" id="provincias">
+                            <option value="0">Seleccione Provincia</option>
+                            <optgroup label="PROV 1">                                
+                                <option value="41">SEVILLA</option>
+                                <option value="39">CÁDIZ</option>
+                            </optgroup>
+                            <optgroup label="PROV 2">
+                                <option value="37">HUELVA</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fichero">Imagen</label>
+                    </td>
+                    <td>
+                        <input type="file" name="fichero" id="fichero">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mensaje">Mensaje</label>
+                    </td>
+                    <td>
+                        <textarea name="mensaje" id="mensaje" cols="50" rows="10" maxlength="20"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="edad">Edad</label>
+                    </td>
+                    <td>
+                        <input type="number" name="edad" id="edad" max="5" min="1"/>
+                        <input type="email" name="email" id="email" required />
+                        <input type="url" name="web" id="web" required />
+                        <input type="search" name="busqueda" id="busqueda" required />
+                        <input type="tel" name="telefono" id="telefono" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fecha">Fechas</label>
+                    </td>
+                    <td>
+                        <input type="date" name="fecha1" id="fecha1" />
+                        <input type="datetime" name="fecha2" id="fecha2" />
+                        <input type="datetime-local" name="fecha3" id="fecha3" />
+                        <input type="time" name="time1" id="time1" />
+                        <input type="month" name="mes" id="mes" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="reset" value="Borrar"/>
+                        <input type="button" name="boton" id="boton" value="BOTÓN"/>
+                    </td>
+                    <td>
+                        <input type="submit" value="Enviar"/>
+                    </td>
+                </tr>
+            </table>        
+        </form>
+        </fieldset>
+    </div>
+</body>
+</html>

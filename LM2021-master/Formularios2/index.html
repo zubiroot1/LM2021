@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body">
+    <form action="acciones/registro.php" method="POST">
+        <table>
+            <caption>Registro</caption>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre</label>
+                </td>
+                <td><input type="text" 
+                    name="nombre" 
+                    id="nombre"
+                    placeholder="Nombre del usuario"
+                    size="50"
+                    maxlength="10"
+                    /> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pass">Password</label>
+                </td>
+                <td>
+                    <input type="password" 
+                            name="pass" 
+                            id="pass"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pregunta">¿Mayor de Edad?</label>
+                </td>
+                <td>
+                    <input type="radio" 
+                            name="pregunta" 
+                            id="pregunta" 
+                            value="S" checked/>
+                            <span>Sí</span>
+                    <input type="radio" 
+                            name="pregunta" 
+                            id="pregunta" 
+                            value="N"/>
+                            <span>No</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Aficiones">Aficiones</label>
+                </td>
+                <td>
+                    <input type="checkbox" 
+                            name="futbol" 
+                            id="futbol" 
+                            value="F"
+                            checked/>
+                            <span>Fútbol</span>
+                    <input type="checkbox" 
+                            name="baloncesto" 
+                            id="baloncesto" 
+                            value="B"/>
+                            <span>Baloncesto</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ciclos">Ciclos FP</label>
+                </td>
+                <td>
+                    <select name="ciclos" id="ciclos">
+                        <option value="-1" selected>Seleccione</option>
+                        <optgroup label="Grado Superior">
+                            <option value="1">ASIR</option>
+                            <option value="2">DAW</option>
+                            <option value="3">DAM</option>
+                        </optgroup>
+                        <optgroup label="Gradio Medio">
+                            <option value="4">SMR</option>
+                        </optgroup>                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fichero">Fichero</label>
+                </td>
+                <td>
+                    <input type="file" name="fichero" id="fichero"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="descripcion">Descripción</label>
+                </td>
+                <td>
+                    <textarea name="descripcion" id="descripcion" rows="10" cols="50" maxlength="20"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edad">Edad</label>
+                </td>
+                <td>
+                    <input type="number" 
+                        name="edad" 
+                        id="edad"
+                        min="1"
+                        max="10"
+                        value="3"/>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="email" name="correo" id="correo" required/> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="url" name="web" id="web" required/> </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tele">Teléfono</label>
+                </td>
+                <td>
+                    <input type="tel" name="tele" id="tele" pattern="[0-9]{2}[0-9]{9}[A-Z]{1}" required />
+                    <input type="search" name="buscar" id="buscar" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fechas">Fechas</label>
+                </td>
+                <td>
+                    <input type="date" name="" id="" />
+                    <input type="time" name="" id="" />
+                    <input type="datetime" name="" id="" />
+                    <input type="datetime-local" name="" id="" />
+                    <input type="month" name="" id="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" 
+                        name="boton" 
+                        id="boton" 
+                        value="Mostrar"
+                        onclick="alert('HOLA')" />
+                    <input type="reset" value="Borrar"/>
+                </td>
+                <td><input type="submit" value="Enviar" /></td>
+            </tr>
+        </table>
+    </form>    
+</body>
+</html>

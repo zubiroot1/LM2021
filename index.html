@@ -1,0 +1,424 @@
+<!-- CAPAS
+
+    <div style="background: blue;
+                width: 100px;
+                height: 100px;
+                position: absolute(en funcion a todo);
+                top: 30px;
+                left: 30px;
+                z-index: 1(colocación uno encima de otro);
+                border: 2px solid black;
+                border-top: 2px dotted blue;
+                border-radius: 10px 5px 3px 1px(radio del borde);
+                box-shadow: 2px 2px 1px black(sombra para la capa y su color);">
+        3
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---ENLACES
+<body>
+    <a id="inicio"/>
+    <h1>Contenido Principal</h1>    
+
+    <a href="#centro">Ir al Centro</a>
+    <br/>
+    <a href="#final">Ir al Final</a>
+
+    <h3>Inicio de Página</h3>
+    <br/>
+
+    <a id="centro"/>
+    <h3>Centro de Página</h3>
+    
+    <a href="#inicio">
+        Subir
+    </a>
+    
+    <a href="#inicio">
+        <img src="../imagenes/flecha.png" 
+        style="width: 24px;height: 24px;">
+    </a>    
+    
+    <br/>
+
+    <a id="final"/>
+    <h3>Fin de Página</h3>
+    <a href="#inicio">Subir</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----FORMULARIOS
+<body>
+    <div style="margin: 0px auto">
+        <fieldset>
+            <legend>Mi Formulario</legend>
+        <form action="registro.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre</label></td>
+                    <td><input type="text" 
+                        name="nombre" 
+                        id="nombre"
+                        value=""
+                        placeholder="Escriba aquí"
+                        autofocus
+                        size="30"
+                        maxlength="10"
+                        pattern="[A-Z]{6}[0-9]{4}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td>
+                        <input type="password" 
+                                name="pass"
+                                id="pass"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pregunta">¿Mayor de Edad?</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="pregunta" 
+                                id="pregunta" value="S" checked /><span>Sí</span>
+                        <input type="radio" name="pregunta" 
+                                id="pregunta" value="N" /><span>No</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="aficiones">Aficiones</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="deporte" id="deporte" value="D" checked /><span>Deporte</span>
+                        <input type="checkbox" name="cine" id="cine" value="C" /><span>Cine</span>
+                        <input type="checkbox" name="viajar" id="viajar" value="V" /><span>Viajar</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="provincias">Provincias</label>
+                    </td>
+                    <td>
+                        <select name="provincias" id="provincias">
+                            <option value="0">Seleccione Provincia</option>
+                            <optgroup label="PROV 1">                                
+                                <option value="41">SEVILLA</option>
+                                <option value="39">CÁDIZ</option>
+                            </optgroup>
+                            <optgroup label="PROV 2">
+                                <option value="37">HUELVA</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fichero">Imagen</label>
+                    </td>
+                    <td>
+                        <input type="file" name="fichero" id="fichero">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mensaje">Mensaje</label>
+                    </td>
+                    <td>
+                        <textarea name="mensaje" id="mensaje" cols="50" rows="10" maxlength="20"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="edad">Edad</label>
+                    </td>
+                    <td>
+                        <input type="number" name="edad" id="edad" max="5" min="1"/>
+                        <input type="email" name="email" id="email" required />
+                        <input type="url" name="web" id="web" required />
+                        <input type="search" name="busqueda" id="busqueda" required />
+                        <input type="tel" name="telefono" id="telefono" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fecha">Fechas</label>
+                    </td>
+                    <td>
+                        <input type="date" name="fecha1" id="fecha1" />
+                        <input type="datetime" name="fecha2" id="fecha2" />
+                        <input type="datetime-local" name="fecha3" id="fecha3" />
+                        <input type="time" name="time1" id="time1" />
+                        <input type="month" name="mes" id="mes" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="reset" value="Borrar"/>
+                        <input type="button" name="boton" id="boton" value="BOTÓN"/>
+                    </td>
+                    <td>
+                        <input type="submit" value="Enviar"/>
+                    </td>
+                </tr>
+            </table>        
+        </form>
+        </fieldset>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----MAP
+<body style="background-image: url(google2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            ">
+<body style="background: url(google2.png) no-repeat center fixed">
+    <body>
+        <img src="google2.png" 
+            alt="Logo Google" 
+            usemap="#formas" 
+            ismap="ismap">
+    
+        <map name="formas" id="formas">
+            <area shape="poly" 
+                coords="8,94,11,76,22,59,42,49,68,50,83,61,91,74,96,94"
+                href="http://www.google.es"
+                target="_blank">
+            <area shape="rect"
+                coords="96,8,144,96"
+                href="http://www.microsoft.com"
+                target="_blank">
+            <area shape="circle"
+                coords="75,143,30"
+                href="http://www.marca.com"
+                target="_blank">
+        </map>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+------METAS
+    <meta name="title" content="Página de Meta Datosw">
+    <meta name="description" content="Página para monstrar los metadatos de una página web">
+    <meta name="keywords" content="html, metadatos, web, diseño web,">
+    <meta name="robots" content="NoIndex, Follow">
+    <meta http-equiv="Refresh" content="3;https://www.google.es">
+    <meta http-equiv="Expires" content="Fri, 27 Nov 2020">
+    <meta name="language" content="ES">
+    <meta name="copyright" content="">
+    <meta name="author" content="">
+    <meta name="revised" content="">
+    <meta name="sumary" content="">
+    <meta name="generator" content="">
+    
+
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Dental Clinic Zubi">
+    <meta name="language" content="ES">
+    <meta name="copyright" content="">
+    <meta name="author" content="Zubi">
+    <meta name="revised" content="27 de noviembre de 2020">
+                Twitter 
+<meta name=”twitter:title” content=”Dental Clinic Zubi”>
+<meta name=”twitter:description” content=”Click here to learn about our clinics.”>
+<meta name=”twitter:image” content=”https://www.dentalcliniczubi.com”>
+<meta name=”twitter:site” content=”@DentalClinicZubi”>
+<meta name=”twitter:creator” content=”@DentalClinicZubi”>
+
+
+
+
+
+
+
+
+
+
+
+------PRIMERO
+Esto es un texto preformateado
+<pre>
+    Esta es
+    la primera frase
+    ñ &ntilde; &COPY; &reg; &yen; €
+    </pre>
+Párrafos
+   
+    <p>
+        Primer parrafo
+    </p>
+    <p>
+        Segundo parrafo
+    </p>
+Encabezados
+    <h1>Encabezado 1 </h1>
+    <h2>Encabezado 2 </h2>
+    <h3>Encabezado 3</h3>
+    <h4>Encabezado4</h4>
+    <h5>Encabezado 5</h5>
+    <h6>Encabezado 6</h6>
+
+   Linea horizontal
+   <hr>
+   
+Parrafo avanzado
+  <blockquote style="background-color: grey;">
+      <span style="color: indigo;">Tema 1</span>
+      <p>
+          <ins>Este</ins> es el <del>tema</del> 1
+      </p>
+  </blockquote> 
+
+
+
+
+  
+
+Listas
+  <ul style="list-style-type: square;">
+    Lista de objetos
+    <li>Mesa</li>
+    <li>Silla</li>
+    <li>Ordenador</li>
+</ul>
+<ol>Lista de ordenadores
+    <ul>Especificaciones
+        <li>Pantalla plana</li>
+        <li>Procesador</li>
+    </ul>
+
+<li>Ordenador Alumno</li>    
+<li>Ordenador Profesor</li>
+</ol>
+<dl>
+    <dt>Ordenador</dt>
+    <dd>Objeto que hace muchas cosas</dd>
+    <dt>Pantalla</dt>
+    <dd>Objeto que muestra muchas cosas</dd> 
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+----TABLAS
+ <table rules="groups" style="border: 1px solid black">
+        <caption>Tabla comparativa de las características técnicas de los reproductores MP3</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th colspan="3">MP3 mini</th>
+                <th colspan="2">MP3 grande</th>
+            </tr>
+            </thead>
+            <tbody >
+            <tr>
+               <td style="border: 1px solid black"><strong>Capacidad de almacenamiento</td>
+               <td style="border: 1px solid black">4GB (1.000 canciones)</td>
+               <td style="border: 1px solid black">8GB (2.000 canciones)</td>
+               <td style="border: 1px solid black">16GB (4.000 canciones)</td>
+               <td style="border: 1px solid black">30GB (7.500 canciones)</td>
+               <td style="border: 1px solid black">80GB (20.000 canciones)</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black"><strong>Colores</th>
+                <td style="border: 1px solid black" align="center"><img  src=blanco.png></td>
+                <td style="border: 1px solid black" align="center"><img src=varios.png></td>
+                <td style="border: 1px solid black" align="center"><img src=gris.png></td>
+                <td style="border: 1px solid black" align="center" colspan="2"><img  src=blancoynegro.png></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black"><strong>Pantalla</td>
+                <td style="border: 1px solid black"  colspan="3">LCD de 3cm (diagonal) con retroluminación</td>
+                <td style="border: 1px solid black"  colspan="2">LCD de 6cm (diagonal) con retroluminación</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black" rowspan="2"><strong>Tiempo de carga</td>
+                <td style="border: 1px solid black" rowspan="2" colspan="3">Unas 3 horas</td>
+                <td style="border: 1px solid black" colspan="2"> Unas 4 horas</td>
+            </tr>
+            <tr>
+                <td colspan="2">Unas dos horas</td>
+            </tr>
+
+        </tbody>
+
+        
+    </table>
+
+
+
+    
+-->
