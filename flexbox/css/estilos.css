@@ -1,0 +1,31 @@
+.contenedor{
+    display: flex;
+   /* flex-direction: column; */
+   /* flex-wrap: wrap; */
+   /* flex-flow: row-reverse wrap-reverse; */
+
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end; */
+    height: 240px;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /* align-items: stretch; */
+    background: grey;
+    align-content: center;
+}
+.elemento{
+    width: 21%;
+    background: linear-gradient(to right, blue, white);
+    border: 1px solid white;
+
+    height: 40px;
+    
+    color: white;
+    
+    flex:1 1 0;
+}
+
+.elemento:nth-child(4) {
+    flex-grow: 3    ;
+}

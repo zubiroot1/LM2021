@@ -1,0 +1,47 @@
+a,p {
+    font-size: 18px;
+}
+div a {
+    color: crimson;
+}
+div#capa1 {
+    background: blue;
+}
+.letragrande {
+    font-size: xx-large;
+}
+div#capa1 a.encima:hover {
+    font-size: xx-large;
+    color: yellow;
+}
+p#miparrafo::first-line {
+    font-weight: bold;
+}
+p#miparrafo::first-letter {
+    font-size: 60px;
+    color: brown;
+}
+p#parrafofinal:first-child {
+    background: darkmagenta;
+}
+
+div#capa1 * {
+    background: chocolate;
+    width: ;
+}
+div > a {
+    font-style: italic;
+}
+.bordecapa {
+    border: 2px black solid;
+}
+a[src^="https"] {
+    color: green;
+    font-weight: bold;
+}
+a[href$="pdf"] {
+    text-transform: uppercase;
+}
+div + p {
+    font-size: 80px;
+}
