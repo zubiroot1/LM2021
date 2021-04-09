@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="funciones.js"></script>
+</head>
+<body>
+    <p>
+        Pedir frase al usuario y un número. Repetir en pantalla la frase
+        tantas veces como indique el número
+    </p>
+    <table>
+        <tr>
+            <td><label for="frase">Frase</label></td>
+            <td><input type="text" name="frase" id="frase"></td>
+        </tr>
+        <tr>
+            <td><label for="num">Número</label></td>
+            <td><input type="number" name="num" id="num"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Mostrar" onclick="mostrarFrase()"></td>
+        </tr>
+    </table>
+    <div>
+        <span id="resultadoFrase"></span>
+    </div>
+
+</body>
+</html>

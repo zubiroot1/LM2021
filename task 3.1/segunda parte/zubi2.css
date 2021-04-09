@@ -1,0 +1,51 @@
+/* Actividad 2 */
+
+/* A-Todas las etiquetas “h2”, “span” debe estar el texto en cursiva */
+h2,span {
+	font-style: italic;
+}
+
+/* B-Debe existir una capa con id “datos” que tenga el fondo en gris y la letra en negro */
+
+#datos {
+	background-color: gray;
+	color: black;
+}
+
+/* C-Debe crear una capa con varios span dentro de la capa. Todos los span deben tener el texto en negrita */
+
+#textonegrita span {
+    font-weight: bolder;
+    }
+
+/* D-Al segundo span de la anterior capa póngale una clase llamada “segundo”. Si se pulsa en el span debe cambiar el color de fondo. */
+
+.segundo:hover {
+    background-color: pink;
+}	
+
+/* E-Al span anterior póngale la primera letra con una letra muy grande. */
+
+div#negrita 
+span.segundo::first-letter{
+    font-size: 80px;
+    }
+
+/* F-Cree una lista con enlaces. Los enlaces .com deben estar en azul y los enlaces .es en rojo */
+
+a[href$=".com"] {
+    color: blue;
+  }
+a[href$=".es"] {
+    color: red;
+  }
+
+/* G-La lista anterior debe tener un id igual a lista. Poner un id a los 2 primeros enlaces. La lista con id lista y los enlaces con id al pasar el ratón por encima debe cambiar el tamaño de letra. */
+
+
+
+/* H-El primer elemento de la lista tiene un fondo en gris */
+ul#lista 
+li:first-child {
+    background-color: grey;
+}

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\JS03",
+    "\\JS03\\02"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\JS03\\02\\funciones.js",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS03</title>
+
+    <script type="text/javascript" src="funciones.js"></script>
+</head>
+<body>
+    <p>
+        Solicita nombre etc etc
+    </p>
+    <table>
+        <tr>
+            <td><label fpr="nombre">Nombre</label></td>
+            <td><input type="text" name="nombre"></td>
+        </tr>
+        <tr>
+            <td><label for="edad">Edad</label></td>
+            <td><input type="number" name="edad" id="edad" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Calcular" id="calcular" /></td>
+        </tr>
+    </table>
+    <div>
+        <span id="resultado"></span>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("calcular").addEventListener("click",calcularedad)
+    </script>
+
+    <p>Pedir 2 números al usuario e indicar cual es el mayor de los 2</p>
+
+    <h1>Mete un par de numeros y te digo el mayor nene</h1>
+    <table>
+        <tr>
+            <td><label for="primernumero">Primer numero:</label></td>
+            <td><input type="number" name="numero1" id="numero1" /></td>
+        </tr>
+
+        <tr>
+            <td><label for="segundonumero">Segundo numero:</label></td>
+            <td><input type="number" name="numero2" id="numero2" /></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="button" value="mayor" id="mayor" /></td>
+        </tr>
+
+    </table>
+
+    <div>
+        <span id="resultado"></span>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("calcular").addEventListener("click",calcularedad)
+    </script>
+</body>
+</html>
