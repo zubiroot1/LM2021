@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document 2</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="Numero1" id="Numero1">
+        <input type="text" name="Numero2" id="Numero2">
+        <input type="text" name="Numero3" id="Numero3">
+    </form>
+    <button id="botonConsultar" type="button" style="width: 100px">Calcular</button>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $("#botonConsultar").on('click', function () {
+            var Numero1 = Number($("#Numero1").val());
+            var Numero2 = Number($("#Numero2").val());
+            var Numero3 = Number($("#Numero3").val());
+            if (Numero1 > Numero2 && Numero1 > Numero3) {
+                alert("El casillero a es mas grande");
+            } else if (Numero2 > Numero1 && Numero2 > Numero3) {
+                alert("El casillero b es mas grande");
+            } else if (Numero3 > Numero1 && Numero3 > Numero2) {
+                alert("El casillero c es mas grande");
+            } else {
+                alert("No cumple ninguna de la condición");
+            }
+
+        });
+
+    </script>
+</body>
+</html>
+
+
+
+
+<html>
+
+<head>
+
+    <title>Mostrar número mayor</title>
+
+</head>
+
+<body>
+
+    <!--Introducir dos números por prompt y mostrar el valor mayor de los dos-->
+    <!--<noscript>
+    <p>Esta pagina no usa javascript</p>
+    </noscript>-->
+
+    <center>
+
+        <script type="text/javascript">
+
+            var numero1;
+            var numero2;
+
+            numero1 = parseInt(prompt("Introduce el numero1", ""));
+            numero2 = parseInt(prompt("Introduce el numero2", ""));
+
+            if (numero1 >= numero2) {
+                document.write("El mayor es: " + numero1 + " ( numero1 )");
+            }
+
+            else {
+                document.write("El mayor es : " + numero2 + " ( numero2 )");
+            }
+
+        </script>
+
+    </center>
+
+</body>
+
+</html>
