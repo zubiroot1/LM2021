@@ -1,0 +1,7 @@
+.cambios .content{
+    color: white;
+}
+
+.nocambios .content {
+    color: green;
+}

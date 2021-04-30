@@ -86,14 +86,7 @@ function validarFormulario() {
                                     cadenaError = cadenaError + "<li>Error Cód Postal: 5 cifras</li>";
     }
 
-    var tel = document.getElementById("telefono");
-    if (tel.value == null || tel.value.length == 0) {
-                                    cadenaError = cadenaError + "<li>Error Teléfono: campo vacío</li>";
-    } else if (tel.value.length != 9) {
-                                    cadenaError = cadenaError + "<li>Error Teléfono: 9 cifras</li>";
-    } else if (!tel.value.startsWith(9) && !tel.value.startsWith(6)) {
-                                    cadenaError = cadenaError + "<li>Error Teléfono: 9 o 6 primera cifra</li>";
-    }
+   
 
     if (cadenaError.length == 0) {
         return true;

@@ -26,18 +26,18 @@ function validarFormulario() {
         cadenaError = cadenaError + "<li>Error edad: Edad no válida </li>";
     }
 
-    var pass = document.getElementById("pass");
-    if (pass.value == null || pass.value.length == 0) {
-        cadenaError = cadenaError + "<li>Error Contraseña: campo vacío</li>";
-    } 
+//    var pass = document.getElementById("pass");
+//    if (pass.value == null || pass.value.length == 0) {
+//        cadenaError = cadenaError + "<li>Error Contraseña: campo vacío</li>";
+//    }
 
-    var rpass = document.getElementById("rpass");
-    if (rpass.value == null || rpass.value.length ==0) {
-        cadenaError = cadenaError + "<li>Error Repetir Contraseña: campo vacío</li>";
-    } else if (rpass.value != pass.value) {
-        cadenaError = cadenaError + "<li>Error: Las contraseñas no coinciden</li>";
-    }
-
+//    var rpass = document.getElementById("rpass");
+//    if (rpass.value == null || rpass.value.length ==0) {
+//        cadenaError = cadenaError + "<li>Error Repetir Contraseña: campo vacío</li>";
+//    } else if (rpass.value != pass.value) {
+//        cadenaError = cadenaError + "<li>Error: Las contraseñas no coinciden</li>";
+//    }
+//
     if (cadenaError.length == 0) {
         return true;
     } else {
