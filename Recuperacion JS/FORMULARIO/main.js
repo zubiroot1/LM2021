@@ -22,7 +22,7 @@ function validarFormulario() {
     var email = document.getElementById("email");
     if (email.value == null || email.value.length == 0) {
         cadenaError = cadenaError + "<li>Error email: campo vacío</li>";
-    } else if (!str3.includes("@") || !str3.endsWith(".es",)) {
+    } else if (!str3.includes("@") || !str3.endsWith(".com",)) {
         cadenaError = cadenaError + "<li>Error email: email no válido </li>";
     }
 
