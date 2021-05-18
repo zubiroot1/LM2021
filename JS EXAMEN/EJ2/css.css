@@ -1,0 +1,16 @@
+.primero {
+    font-family: Arial;
+    color: green;
+}
+
+.segundo {
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 170%;
+}
+
+.tercero {
+    font-family: 'Comic Sans MS';
+    font-size: 70%;
+    text-decoration: underline;
+}

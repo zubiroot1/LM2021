@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E1</title>
+
+    <script src="java1.js"></script>
+
+</head>
+<body>
+    <center>
+        <h1>FORMULARIO</h1>
+        <div style="width: 50%;float: left;">
+            <form action="" method="GET" name="nombreFormulario" onsubmit="return validarFormulario()">
+                <table>
+                    <tr>
+                        <td><label for="nombre">Nombre y apellidos:</label></td>
+                        <td>
+                            <input type="text" name="nombre"
+                                   id="nombre" placeholder="nombre">
+                        </td>
+                        <td><span id="splogin" style="color: red;"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="web">web</label></td>
+                        <td><input type="text" name="web" id="web"></td>
+                        <td><span id="spweb"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="edad">Edad</label></td>
+                        <td><input type="number" id="edad" name="edad"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Enviar"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="capaerrores" style="width: 50%;float: left;color: red;visibility: hidden;">
+            <h3>Errores</h3>
+            <span id="errores"></span>
+        </div>
+    </center>
+</body>
+</html>
