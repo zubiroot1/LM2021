@@ -1,15 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Enlaces",
-    "\\Examen JS",
-    "\\JS01",
+    "\\Formularios",
     "\\Recuperacion JS",
-    "\\Recuperacion JS\\Formularios",
-    "\\selectores",
-    "\\selectores\\css",
-    "\\task 7"
+    "\\Recuperacion JS\\CALCULOS",
+    "\\Recuperacion JS\\FORMULARIO"
   ],
-  "SelectedNode": "\\Recuperacion JS\\Formularios\\index.html",
+  "SelectedNode": "\\Recuperacion JS\\FORMULARIO\\main.js",
   "PreviewInSolutionExplorer": false
 }
